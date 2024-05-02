@@ -7,8 +7,8 @@ return {
   opts = {
     options = {
       theme = "gruvbox-material",
-      component_separators = { left = "│", right = "│" },
-      section_separators = { left = "", right = "" },
+      component_separators = { left = '', right = '' },
+      section_separators = { left = '', right = '' },
       globalstatus = true,
       refresh = {
         statusline = 100,
@@ -40,22 +40,23 @@ return {
           "fancy_diagnostics",
           sources = { "nvim_lsp" },
           symbols = { error = " ", warn = " ", info = " " }
-        },
-        { "fancy_searchcount" },
+        }
       },
       lualine_x = {
         "fancy_lsp_servers",
-        "fancy_diff",
-        "progress",
       },
-      lualine_y = {},
-      lualine_z = {},
+      lualine_y = {
+        "fancy_diff"
+      },
+      lualine_z = {
+        "progress"
+      },
     },
     inactive_sections = {
       lualine_a = {},
       lualine_b = {},
-      lualine_c = { "filename" },
-      -- lualine_x = { "location" },
+      lualine_c = {},
+      lualine_x = {},
       lualine_y = {},
       lualine_z = {},
     },
