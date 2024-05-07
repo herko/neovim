@@ -12,14 +12,18 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
-require("vim-options")
+vim.g.mapleader = " "
+
 require("vim-keymaps")
+require("vim-options")
 
 require("lazy").setup("plugins", {
   change_detection = {
     notify = false
   }
 })
+
+vim.cmd.colorscheme "catppuccin"
 
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "eruby.yaml",

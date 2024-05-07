@@ -1,5 +1,4 @@
 local opt = vim.opt
-local g = vim.g
 
 opt.laststatus = 3 -- global statusline
 opt.showmode = false
@@ -41,6 +40,4 @@ opt.updatetime = 250
 -- go to previous/next line with h,l,left arrow and right arrow
 -- when cursor reaches end/beginning of line
 opt.whichwrap:append "<>[]hl"
-
-g.mapleader = " "
 
