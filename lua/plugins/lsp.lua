@@ -29,7 +29,7 @@ return {
 
       lspconfig.ruby_lsp.setup({
         capabilities = capabilities,
-        cmd = {"/Users/lubomirherko/.rbenv/shims/ruby-lsp"}
+        cmd = {"/Users/lubomirherko/.asdf/shims/ruby-lsp"}
       })
 
       -- lspconfig.solargraph.setup({
